@@ -1,0 +1,17 @@
+.steps {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.step {
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  background: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.active {
+  background: #2563eb;
+  color: white;
+}

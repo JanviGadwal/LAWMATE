@@ -1,0 +1,21 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f9fafb;
+  cursor: pointer;
+}
+
+.active {
+  background: #2563eb;
+  color: white;
+}
+
+.back {
+  margin-top: 1rem;
+}

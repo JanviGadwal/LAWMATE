@@ -1,0 +1,163 @@
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #4f46e5;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-bottom: 3px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.step.active {
+  border-color: #4f46e5;
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+.stepContent {
+  margin-bottom: 2rem;
+}
+
+/* ================== Step 1 ================== */
+.categoryContainer, .subcategoryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.categoryCard, .subcategoryCard {
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: linear-gradient(145deg, #e0e7ff, #c7d2fe);
+  color: #1e3a8a;
+  text-align: center;
+}
+
+.categoryCard:hover, .subcategoryCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(79, 70, 229, 0.3);
+}
+
+.categoryCard.selected, .subcategoryCard.selected {
+  background: linear-gradient(145deg, #4f46e5, #4338ca);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.5);
+}
+
+/* ================== Step 2 ================== */
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.card {
+  background: linear-gradient(135deg, #fff, #f0f0ff);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 100%;
+  max-width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+  position: relative;
+}
+
+.card h4 {
+  margin-bottom: 0.5rem;
+  color: #4f46e5;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 20px rgba(79, 70, 229, 0.3);
+}
+
+.card.selected {
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  color: #fff;
+  box-shadow: 0 15px 25px rgba(79, 70, 229, 0.5);
+}
+
+/* ================== Step 3 ================== */
+.summary {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+}
+
+.summary p {
+  margin-bottom: 0.5rem;
+}
+
+/* ================== Step 4 ================== */
+.stepContent select {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e1;
+  margin-top: 1rem;
+}
+
+/* ================== Navigation Buttons ================== */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.nextBtn, .backBtn, .generateBtn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background-color: #4f46e5;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.backBtn {
+  background-color: #6b7280;
+}
+
+.nextBtn:hover, .generateBtn:hover {
+  background-color: #3730a3;
+  transform: translateY(-2px);
+}
+
+.backBtn:hover {
+  background-color: #4b5563;
+  transform: translateY(-2px);
+}
